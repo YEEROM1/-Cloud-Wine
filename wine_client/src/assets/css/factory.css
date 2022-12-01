@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.factory {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.factory .f-title {
+    height: calc(85vh);
+    width: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.factory .f-title .ft-text {
+    width: 70%;
+    height: 40%;
+    padding-left: 25px;
+    letter-spacing: 50px;
+    font-size: 80px;
+    font-family: 楷体;
+    background-image: linear-gradient(to right, rgb(150, 83, 70), rgb(70, 16, 16));
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 1;
+    /* transition: scale 1s ease-in-out,letter-spacing 1s ease-in-out,opacity 1s ease-in-out; */
+    animation: head1 1.5s ease-in-out;
+}
+
+@keyframes head1 {
+    0% {
+        scale: 1.1;
+        opacity: 0;
+        letter-spacing: 30px;
+    }
+
+    100% {
+        scale: 1;
+        opacity: 1;
+        letter-spacing: 50px;
+    }
+}
+
+.factory .f-title .ft-sen {
+    width: 70%;
+    height: 20%;
+    letter-spacing: 20px;
+    font-family: 华文行楷;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    animation: head2 1.5s ease-in-out;
+}
+
+@keyframes head2 {
+    0% {
+        scale: 1.1;
+        opacity: 0;
+        letter-spacing: 30px;
+    }
+
+    100% {
+        scale: 1;
+        opacity: 1;
+        letter-spacing: 20px;
+    }
+}
+
+.f-main {
+    width: 100%;
+    display: flex;
+    border: 5px solid rgb(252, 252, 252);
+    justify-content: center;
+    position: relative;
+}
+
+.f-main .fm-left {
+    width: 35%;
+    height: 70vh;
+    margin-right: 5%;
+    border-left: 5px solid rgb(252, 252, 252);
+    border-right: 5px solid rgb(252, 252, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-main .fm-left ul {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    height: 100%;
+    border-right: 5px solid rgb(252, 252, 252);
+}
+
+.f-main .fm-left ul li {
+    border-radius: 10px;
+    height: 20%;
+    width: 100%;
+    background-color: rgba(246, 206, 161, 0);
+    border: 1px solid rgb(252, 252, 252);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    cursor: pointer;
+    transition: background-size 0.5s ease-in-out;
+}
+
+.f-main .fm-left ul li:hover {
+    background-color: rgba(246, 206, 161, 0.3);
+}
+
+.f-main .fm-left ul li.li-active {
+    background-color: rgba(246, 206, 161, 0.5);
+}
+
+.f-main .fm-left span {
+    height: 100%;
+    width: 70%;
+    font-family: 楷体;
+    background-image: linear-gradient(to right, rgb(195, 63, 36), rgb(70, 16, 16));
+    background-clip: text;
+    color: transparent;
+    writing-mode: vertical-rl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}
+
+.f-main .fm-right {
+    width: 50%;
+    height: 70vh;
+    border-left: 5px solid rgb(252, 252, 252);
+    border-right: 5px solid rgb(252, 252, 252);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.f-main .fm-right .fmr-title {
+    height: 10%;
+    width: 90%;
+    font-size: 24px;
+    font-family: 隶书;
+    color: rgb(86, 49, 47);
+    text-decoration: overline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px dashed rgb(178, 149, 80);
+}
+
+#fm-swiper {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+#fm-swiper .fms-des {
+    padding: 0 5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+
+#fm-swiper .fms-des img {
+    background-image: none;
+}
+
+#fm-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+#fm-swiper .fm-con {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fm-swiper .fm-con .time {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+#fm-swiper .fm-con .honor {
+    position: relative;
+    padding: 20% 0;
+    width: 100%;
+    height: 80%;
+    font-size: 18px;
+    writing-mode: vertical-rl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fm-swiper .fm-con .honor .honor-des {
+    position: absolute;
+    writing-mode: horizontal-tb;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    border: 1px dashed rgb(178, 149, 80);
+    justify-content: space-between;
+}
+
+#fm-swiper .fm-con .honor .honor-des .hd-con {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+#fm-swiper .fm-con .honor .honor-des .hd-con:nth-child(1) {
+    align-items: flex-end;
+}
+
+#fm-swiper .fm-con .honor .honor-des .hd-con:nth-child(2) {
+    align-items: flex-start;
+}
+
+#fm-swiper .fm-con .honor .honor-des .hd-con img {
+    border: none;
+    height: 5%;
+    width: 10%;
+}
+
+/* ----------------------------------history------------------------------------------- */
+
+.f-history {
+    width: 100%;
+    padding: 5% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-history span {
+    width: 80%;
+    text-indent: 40px;
+    font-size: 20px;
+    display: block;
+    margin: 10px;
+}
+
+.f-history p {
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(107, 89, 46);
+    font-family: 隶书;
+    border-bottom: 1px dashed rgb(178, 149, 80);
+    text-decoration: overline;
+}
+
+/* -----------------------------------people-------------------------------------- */
+
+.people {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 5%;
+}
+
+.people::after {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 1%;
+    top: 0;
+    border-top: 1px dashed rgb(178, 149, 80);
+}
+
+.people .p-mian {
+    height: 80vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.people .p-title {
+    height: 20vh;
+    width: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+.people #p-swiper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.people .p-mian #p-swiper .ps-des {
+    width: 100%;
+    height: 30%;
+    display: flex;
+}
+
+.people #p-swiper .ps-des img {
+    background-image: none;
+}
+
+.people #p-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.people #p-swiper .ps-title {
+    width: 30%;
+    height: 90%;
+    position: relative;
+    color: white;
+    writing-mode: vertical-lr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-family: 楷体;
+}
+
+.people #p-swiper .ps-title .pst-des {
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+
+.people #p-swiper .ps-item {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.people #p-swiper .ps-item::-webkit-scrollbar {
+    width: 10px;
+}
+
+.people #p-swiper .ps-item::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgb(178, 149, 80), rgb(176, 114, 49));
+}
+
+.people #p-swiper .ps-item .ps-detail {
+    width: 20%;
+    height: 40%;
+    margin: 3%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.people #p-swiper .ps-item .ps-detail span {
+    position: absolute;
+    color: white;
+    width: 110%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.people #p-swiper .ps-item .ps-detail img {
+    scale: 1;
+    width: 115%;
+}

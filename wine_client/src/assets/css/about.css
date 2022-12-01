@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ab-content {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ab-content .abc-left {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px red dashed;
+}
+
+.ab-content .abc-left .head {
+    width: 50%;
+}
+
+.ab-content .abc-left .details {
+    margin-top: 5%;
+    width: 50%;
+    height: 30%;
+    border: 10px rgb(248, 247, 245) solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ab-content .abc-left .details p {
+    margin: 3px;
+    font-size: large;
+}
+
+.ab-content .abc-right {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ab-content .abc-right .profile{
+    width: 70%;
+    font-size: 20px;
+    text-indent: 40px;
+}

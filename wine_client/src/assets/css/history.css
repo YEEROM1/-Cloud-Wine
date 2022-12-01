@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.history {
+    height: 85vh;
+    overflow: hidden;
+}
+
+.hs-content {
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hsc-item {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    padding: 1% 0;
+    margin: 0 1%;
+    opacity: 0;
+    animation: hsc-ani 1s ease-in-out forwards;
+}
+
+@keyframes hsc-ani {
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.hsc-item:nth-child(2n) {
+    top: -10%;
+}
+
+.hsc-item:nth-child(2n+1) {
+    top: 10%;
+}
+
+.hsc-item .hsc-ani {
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 85%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hsc-item .hst-image {
+    width: 100%;
+    height: 82%;
+    border-top: 1px rgb(163, 144, 101) dashed;
+    border-left: 1px rgb(163, 144, 101) dashed;
+    border-right: 1px rgb(163, 144, 101) dashed;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hsc-item .hst-text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: top 0.5s ease-in-out;
+}
+
+.hsc-item .hst-text.active {
+    top: 0;
+}
+
+.hsc-item .hst-text .hst-title {
+    position: relative;
+    height: 18%;
+    width: 100%;
+    font-size: 32px;
+    font-family: 楷体;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px rgb(139, 88, 84) dashed;
+}
+
+.hsc-item .hst-text .hst-body {
+    padding: 2%;
+    height: 82%;
+    width: 100%;
+    text-indent: 32px;
+    overflow-y: auto;
+}
+
+.hsc-item .hst-text .hst-body::-webkit-scrollbar {
+    width: 5px;
+}
+
+.hsc-item .hst-text .hst-body::-webkit-scrollbar-thumb {
+    border-radius: 2.5px;
+    background-image: linear-gradient(rgb(133, 91, 86), rgb(172, 153, 111));
+}
+
+.hsc-item .hst-des {
+    left: 0px;
+    bottom: 0px;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
