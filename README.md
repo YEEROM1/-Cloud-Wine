@@ -21,7 +21,7 @@ npm run build
 因为用到的是json格式数据，为了方便数据库就用的是mongoDB，然后同时也是为了方便  
 服务我放在云服务器上启动了的，所以这个服务可以不用启动(服务的ip和端口：121.40.40.218:8000)  
 源码和数据文件(public下的那几个json文件) 全部都在这里  
-**想本地看一下的话要麻烦下一个mongoDB，再建一个wine数据库，并在下面建立feature、factory、process、history四个集合并导入public下对应的json文件 
+**想本地看一下的话要麻烦下一个mongoDB，再建一个wine数据库，并在下面建立feature、factory、process、history四个集合并导入public下对应的json文件**  
 
 后端也没啥复杂功能，主要不怎么会后端_(:з」∠)_     
 就是简单传下图片和一些数据用|ू･ω･` )  
