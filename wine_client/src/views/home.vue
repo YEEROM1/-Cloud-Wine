@@ -150,18 +150,16 @@ export default {
     };
   },
   created() {
-    axios.get("http://121.40.40.218:8000/api/getImage/home").then((res) => {
+    axios.get(this.global.apiUrl + "api/getImage/home").then((res) => {
       this.hs_img.url = res.data.imgUrl;
       this.des_img = res.data.desUrl;
       this.title_img = res.data.titleUrl;
       this.hf_img = res.data.facUrl;
     });
-    axios
-      .get("http://121.40.40.218:8000/api/getHome/h_wiki_data")
-      .then((res) => {
-        this.flavor_data = res.data.flavor_data;
-        this.process_data = res.data.process_data;
-      });
+    axios.get(this.global.apiUrl + "api/getHome/h_wiki_data").then((res) => {
+      this.flavor_data = res.data.flavor_data;
+      this.process_data = res.data.process_data;
+    });
   },
 
   mounted() {

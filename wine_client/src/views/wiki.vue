@@ -278,13 +278,13 @@ export default {
   },
 
   created() {
-    axios.get("http://121.40.40.218:8000/api/getImage/wiki").then((res) => {
+    axios.get(this.global.apiUrl + "api/getImage/wiki").then((res) => {
       this.swiper_jar = res.data.jar;
       this.fla_img = res.data.fla_img;
       this.wiki_des = res.data.wiki_des;
     });
 
-    axios.get("http://121.40.40.218:8000/api/getProcess").then((res) => {
+    axios.get(this.global.apiUrl + "api/getProcess").then((res) => {
       console.log(res.data);
       this.process = res.data;
       setTimeout(() => {
@@ -292,7 +292,7 @@ export default {
       }, 0);
     });
 
-    axios.get("http://121.40.40.218:8000/api/getFeature").then((res) => {
+    axios.get(this.global.apiUrl + "api/getFeature").then((res) => {
       this.feature = res.data;
       setTimeout(() => {
         this.initFSwiper();

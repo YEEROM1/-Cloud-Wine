@@ -73,7 +73,7 @@ export default {
     },
   },
   created() {
-    axios.get("http://121.40.40.218:8000/api/getImage/history").then((res) => {
+    axios.get(this.global.apiUrl + "api/getImage/history").then((res) => {
       this.his_img = res.data.his_img;
       this.his_des = res.data.his_des;
     });

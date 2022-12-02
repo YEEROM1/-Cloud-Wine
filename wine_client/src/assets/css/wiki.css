@@ -365,7 +365,7 @@
     position: absolute;
     left: 0;
     width: 100%;
-    height: calc(100vh);
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -420,7 +420,7 @@
     cursor: pointer;
 }
 
-.w-process .wp-before span+svg{
+.w-process .wp-before span+svg {
     cursor: pointer;
 }
 

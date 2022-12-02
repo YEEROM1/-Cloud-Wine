@@ -196,13 +196,13 @@ export default {
     },
   },
   created() {
-    axios.get("http://121.40.40.218:8000/api/getFactory").then((res) => {
+    axios.get(this.global.apiUrl + "api/getFactory").then((res) => {
       console.log(res.data);
       this.f_main = res.data;
       console.log(this.f_main);
     });
 
-    axios.get("http://121.40.40.218:8000/api/getImage/factory").then((res) => {
+    axios.get(this.global.apiUrl + "api/getImage/factory").then((res) => {
       this.fac_img = res.data.fac_img;
       this.p_data = res.data.p_data;
       this.logo = res.data.logo;

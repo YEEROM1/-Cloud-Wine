@@ -50,7 +50,7 @@ export default {
     };
   },
   created() {
-    axios.get("http://121.40.40.218:8000/api/getImage/about").then((res) => {
+    axios.get(this.global.apiUrl + "api/getImage/about").then((res) => {
       this.ab_bg = res.data.ab_bg;
       this.ab_des = res.data.ab_des;
       this.ab_head = res.data.ab_head;

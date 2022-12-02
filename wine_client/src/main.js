@@ -2,13 +2,12 @@ import Vue from 'vue'
 import App from './app.vue'
 import router from './router'
 import store from './store'
-
-import 'bootstrap/dist/css/bootstrap.css'
+import global from '@/assets/js/global'
 
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 Vue.use(VueAwesomeSwiper)
-
+Vue.prototype.global = global
 Vue.config.productionTip = false
 
 router.afterEach(() => {
