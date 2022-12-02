@@ -109,7 +109,7 @@
 
 .f-main .fm-left ul li {
     border-radius: 10px;
-    height: 20%;
+    height: calc(20% - 2px);
     width: 100%;
     background-color: rgba(246, 206, 161, 0);
     border: 1px solid rgb(252, 252, 252);
