@@ -464,13 +464,13 @@
     position: absolute;
     right: calc(100% / 18);
     bottom: calc(5%);
-    width: calc(100% * 6 / 18);
+    width: calc(100% * 5 / 18);
     height: calc(30%);
-    padding: 20px;
+    margin: 5px;
     display: flex;
+    padding: 0 calc(100% / 36);
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
 }
 
 @keyframes rotate {
