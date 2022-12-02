@@ -235,14 +235,14 @@
     display: flex;
     border: 1px dashed rgb(178, 149, 80);
     justify-content: space-between;
+    align-items: center;
 }
 
 #fm-swiper .fm-con .honor .honor-des .hd-con {
-    height: 100%;
+    height: calc(100% - 10px);
     width: 20%;
     display: flex;
     justify-content: center;
-    padding: 5px 0;
 }
 
 #fm-swiper .fm-con .honor .honor-des .hd-con:nth-child(1) {
