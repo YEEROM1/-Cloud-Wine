@@ -139,6 +139,7 @@ img.ht-ani {
     height: 50vh;
     width: 100%;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     position: absolute;
     bottom: 0;
