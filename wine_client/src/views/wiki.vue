@@ -59,7 +59,7 @@
           <span>{{ item.name }}</span>
           <br />
           <span>{{ item.wine }}</span>
-          <img class="wti-bg" v-bind:src="fla_img[index]" alt="" />
+          <img class="wti-bg" v-bind:src="fla_img[index]" alt="" @click="wine_detail(index)"/>
           <img class="wti-hover" v-bind:src="wiki_des[0]" alt="" />
         </div>
       </div>
@@ -272,9 +272,14 @@ export default {
         this.isShift = false;
       }
     },
-    describe() {
-      console.log(1);
-    },
+    wine_detail(index){
+      this.$router.push({
+        path: '/wiki/wine_detail',
+        query: {
+          context: index
+        }
+      })
+    }
   },
 
   created() {
@@ -285,7 +290,6 @@ export default {
     });
 
     axios.get(this.global.apiUrl + "api/getProcess").then((res) => {
-      console.log(res.data);
       this.process = res.data;
       setTimeout(() => {
         this.initPSwiper();

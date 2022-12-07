@@ -99,8 +99,8 @@
           <div class="swiper-wrapper">
             <div
               class="swiper-slide"
-              v-for="(item, index) in p_data"
-              :key="index"
+              v-for="(item, index1) in p_data"
+              :key="index1"
             >
               <div
                 class="ps-title"
@@ -118,10 +118,14 @@
               >
                 <div
                   class="ps-detail"
-                  v-for="(name, index) in item.name"
-                  :key="index"
+                  v-for="(name, index2) in item.name"
+                  :key="index2"
                 >
-                  <img v-bind:src="item.img[index]" alt="" />
+                  <img
+                    v-bind:src="item.img[index2]"
+                    alt=""
+                    @click="people_detail(index1, index2)"
+                  />
                   <span
                     class="psd-name"
                     :style="{ 'background-image': 'url(' + fac_img[11] + ')' }"
@@ -193,6 +197,14 @@ export default {
     },
     change(index) {
       this.renindex = index;
+    },
+    people_detail(index1, index2) {
+      this.$router.push({
+        path: "/factory/people_detail",
+        query: {
+          id: [index1, index2],
+        },
+      });
     },
   },
   created() {
