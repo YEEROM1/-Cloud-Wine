@@ -7,6 +7,7 @@ const getProcess = require('./routes/db_getProcess');
 const getFeature = require('./routes/db_getFeature');
 const wProcess = require('./routes/db_wProcess');
 const getFactory = require('./routes/db_getFactory');
+const getDetail = require('./routes/db_getDetail');
 const getHome = require('./routes/getHome');
 const getImage = require('./routes/getImage');
 const login = require('./routes/db_regLogin');
@@ -30,6 +31,7 @@ app.use('/api/getFeature', getFeature);
 app.use('/api/getFactory', getFactory);
 app.use('/api/getHome', getHome);
 app.use('/api/getImage', getImage);
+app.use('/api/getDetail', getDetail);
 
 
 /*------------- 工艺数据------------*/
