@@ -25,7 +25,7 @@ npm run build
 源码和数据文件(public下的那几个json文件) 全部都在这里  
 
 **想本地启动看一下的话要麻烦下一个mongoDB，再建一个wine数据库  
-然后在wine数据库下建立feature、factory、process、history四个集合并导入public下对应的json文件  
+然后在wine数据库下建立feature、factory、process、history、wine_detail、people_detail六个集合并导入public下对应的json文件  
 最后把前端wine_client中src-assets-js下的global文件中apiUrl的ip改为localhost就行    
 占用的是8000端口**  
 
