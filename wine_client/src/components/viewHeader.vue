@@ -47,7 +47,7 @@ export default {};
   font-weight: 600;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-family: 楷体;
+  font-family: KaiTi;
   font-size: 28px;
   transition: color 0.2s;
 }

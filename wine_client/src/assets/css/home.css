@@ -61,7 +61,7 @@
 }
 
 .ht-img .hti-c1-active:before {
-    background-image: url("http://121.40.40.218:8000/public/images/home/fu_2.png");
+    background-image: url("http://47.108.116.119:8000/public/images/home/fu_2.png");
     background-color: rgba(211, 199, 157, 0.6);
     background-size: 100%;
     background-position: center;
@@ -84,7 +84,7 @@
 }
 
 .ht-img .hti-c2-active:after {
-    background-image: url("http://121.40.40.218:8000/public/images/home/fu_1.png");
+    background-image: url("http://47.108.116.119:8000/public/images/home/fu_1.png");
     background-color: rgba(211, 199, 157, 0.6);
     background-size: 100%;
     background-position: center;
@@ -217,7 +217,7 @@ img.ht-ani {
     text-align: center;
     font-size: calc(5vw);
     writing-mode: tb-rl;
-    font-family: 楷体;
+    font-family: KaiTi ;
     transform: translateY(-7vh);
     opacity: 0;
     transition: opacity 1.5s ease-in-out, transform 2s ease-in-out;
@@ -451,7 +451,7 @@ img.ht-ani {
 .h-factory .hf-right .hfr-item span {
     position: relative;
     font-size: calc(4vw);
-    font-family: 宋体;
+    font-family: SimSun;
     font-weight: bold;
     writing-mode: tb-rl;
     z-index: 10;
@@ -548,7 +548,7 @@ img.ht-ani {
 .hwk-top a span {
     cursor: pointer;
     font-size: calc(4vw);
-    font-family: 楷体;
+    font-family: KaiTi ;
     color: rgb(111, 26, 26);
     transform: translateY(-6vh);
     scale: 1;
@@ -576,7 +576,7 @@ img.ht-ani {
 
 .hwk-b-c span {
     font-size: calc(3vw);
-    font-family: 宋体;
+    font-family: SimSun;
     opacity: 0;
     transition: opacity 1.5s ease-in-out, transform 1s ease-in-out;
 }
@@ -611,7 +611,7 @@ img.ht-ani {
 .hwkb-li .hwkb-li-t1 {
     height: 100%;
     font-size: 250%;
-    font-family: 楷体;
+    font-family: KaiTi ;
     color: rgb(106, 20, 20);
     opacity: 1;
 }
@@ -619,7 +619,7 @@ img.ht-ani {
 .hwkb-li .hwkb-li-t2 {
     height: 100%;
     font-size: 4vh;
-    font-family: 楷体;
+    font-family: KaiTi ;
     /* color: rgb(106, 20, 20); */
     opacity: 1;
 }

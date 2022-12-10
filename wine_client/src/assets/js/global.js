@@ -1,6 +1,4 @@
-const apiUrl = "http://121.40.40.218:8000/"
-// localhost
-// 121.40.40.218
+const apiUrl = "http://47.108.116.119:8000/"
 export default {
     apiUrl
 }

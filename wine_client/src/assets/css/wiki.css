@@ -32,7 +32,7 @@
     width: 40%;
     height: 50%;
     display: flex;
-    font-family: 楷体;
+    font-family: KaiTi;
     justify-content: center;
     background-image: linear-gradient(to right, rgb(166, 55, 32), rgb(58, 28, 28));
     background-clip: text;
@@ -180,7 +180,7 @@
     font-size: 32px;
     color: white;
     writing-mode: vertical-rl;
-    font-family: 楷体;
+    font-family: KaiTi;
 }
 
 .w-flr .swiper .wfs-box .wfs-text span:nth-child(2) {
@@ -190,7 +190,7 @@
     right: 10%;
     font-size: 60px;
     writing-mode: vertical-lr;
-    font-family: 楷体;
+    font-family: KaiTi;
     font-weight: bold;
     background-position: center;
     background-repeat: no-repeat;
@@ -344,7 +344,7 @@
     align-items: center;
     color: white;
     font-size: 7vh;
-    font-family: 楷体;
+    font-family: KaiTi;
     font-weight: bold;
     cursor: pointer;
 }

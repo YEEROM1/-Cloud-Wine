@@ -28,7 +28,7 @@
     padding-left: 25px;
     letter-spacing: 50px;
     font-size: 80px;
-    font-family: 楷体;
+    font-family: KaiTi ;
     background-image: linear-gradient(to right, rgb(150, 83, 70), rgb(70, 16, 16));
     background-clip: text;
     color: transparent;
@@ -135,7 +135,7 @@
 .f-main .fm-left span {
     height: 100%;
     width: 70%;
-    font-family: 楷体;
+    font-family: KaiTi ;
     background-image: linear-gradient(to right, rgb(195, 63, 36), rgb(70, 16, 16));
     background-clip: text;
     color: transparent;
@@ -365,7 +365,7 @@
     justify-content: center;
     align-items: center;
     font-size: 80px;
-    font-family: 楷体;
+    font-family: KaiTi ;
 }
 
 .people #p-swiper .ps-title .pst-des {
