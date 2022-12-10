@@ -43,7 +43,7 @@ app.use('/api', login);
 
 /*---------------监听--------------*/
 app.listen(8000, () => {
-  console.log("http://121.40.40.218:8000");
+  console.log("http://47.108.116.119:3000/");
 })
 
 module.exports = app;

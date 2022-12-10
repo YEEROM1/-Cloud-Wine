@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 // mongodb://localhost:27017
 // 121.40.40.218:27017
-mongoose.connect('mongodb://121.40.40.218:27017/wine', {
+mongoose.connect('mongodb://47.108.116.119:27017/wine', {
     useNewUrlParser: true
 })
     .then(() => console.log('process数据库连接成功...'))

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const baseImageUrl = 'http://121.40.40.218:8000/public/images/';
+const baseImageUrl = 'http://47.108.116.119:8000/public/images/';
 
 
 function createImgUrl(baseUrl, num, name, type, page = null) {
